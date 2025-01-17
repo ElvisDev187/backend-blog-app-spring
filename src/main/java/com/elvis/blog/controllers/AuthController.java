@@ -1,4 +1,4 @@
-package com.elvis.blog.config;
+package com.elvis.blog.controllers;
 
 import com.elvis.blog.domain.dtos.AuthResponse;
 import com.elvis.blog.domain.dtos.LoginRequest;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/auth")
+@RequestMapping("/api/v1/auth/login")
 @RequiredArgsConstructor
 public class AuthController {
     private final AuthenticationService authenticationService;
