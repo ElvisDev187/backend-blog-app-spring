@@ -16,6 +16,7 @@ public class ApiErrorResponse {
 
     private int status;
     private String message;
+    @Builder.Default
     private List<FieldError> errors = new ArrayList<>();
 
     @Data
